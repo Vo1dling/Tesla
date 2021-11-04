@@ -1,0 +1,644 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gotham Medium';  
+}
+body{
+    max-height: 300vh;
+}
+html{
+     overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.scroll-align{
+    scroll-snap-align: start;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+#Page_1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 0px -72px;
+}
+@font-face {
+    font-family: 'TESLA';
+    src: url('Fonts/TESLA/TESLA.eot');
+    src: url('Fonts/TESLA/TESLA.eot?#iefix') format('embedded-opentype'),
+    url('Fonts/TESLA/TESLA.woff') format('woff'),
+    url('Fonts/TESLA/TESLA.ttf') format('truetype'),
+    url('Fonts/TESLA/TESLA.svg#TESLA') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('Fonts/Gotham Medium/Gotham Medium.eot');
+    src: url('Fonts/Gotham Medium/Gotham Medium.eot?#iefix') format('embedded-opentype'),
+    url('Fonts/Gotham Medium/Gotham Medium.woff') format('woff'),
+    url('Fonts/Gotham Medium/Gotham Medium.otf') format('OpenType'),
+    url('Fonts/Gotham Medium/Gotham Medium.svg#Gotham Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.Logo1{
+    position: sticky;
+    width: 6.5%;
+    top: 18px;
+    left: 48px;
+    z-index: 2;
+}
+.Logo2{
+    position: sticky;
+    width: 6.5%;
+    top: 18px;
+    left: 48px;
+    z-index: 2;
+}
+.Logo3{
+    
+    position: absolute;
+    width: 6.5%;
+    top: calc(200vh + 20px);
+    left: 48px;
+    z-index: 2;
+}
+/* Page 1 Nav Bar */
+#side-menu a,nav a{
+    color: white;
+    font-size: 14.25px;
+    background-color: transparent;
+    padding: 8px 14px;
+    transition: background-color 0.25s ease-in-out;
+    border-radius: 10px;
+
+}
+nav{
+    width: 100vw;
+    position:sticky;
+    top: 1.75vh;
+    margin-left: 630px;
+}
+#side-menu{
+    margin-right: 35px;
+    float: right;
+    position:sticky;
+    float:right;
+    top:2vh;
+}
+#side-menu a:hover,nav a:hover{
+    background-color: #757A82; 
+}
+#Car_Name{
+    position: absolute;
+    top: 144px;
+    color: white;
+    font-size: 41px;
+    left: 857px;
+}
+/* Speed Meter Shape With Borders */
+.Speed_Inner1{
+    background-color: rgba(161, 161, 161, 0.459);
+    display: block;
+    border:rgba(161, 161, 161, 0.459) 0px solid;
+    position: absolute;
+    top: 844px;
+    left: 651.25px;
+    width: 28px;
+    height: 14px;
+    border-radius: 150px 150px 0 0;
+}
+.needle {  
+    width:3px;
+    height:17.75px;
+    min-height: auto;
+    background:#ffffff;
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius:7px;
+    border-top-left-radius:200%;
+    border-top-right-radius:200%;
+    display:inline-block;
+    left:663px;
+    position:absolute;
+    top:861px;
+    margin:-20px auto auto auto;
+    transform:rotate(90deg);
+    transform-origin:bottom;
+}
+.Speed_Range1{
+    display: block;
+    border-left:rgb(255, 255, 255) 2px solid;
+    border-right:rgb(255, 255, 255) 2px solid;
+    border-top:rgb(255, 255, 255) 2px solid;
+    position: absolute;
+    top: 838px;
+    left: 645.15px;
+    width: 40px;
+    height: 20px;
+    border-radius: 150px 150px 0 0;
+}
+/* Page Content */
+._31s{
+    position: relative;
+    left: 40px;
+    font-size: 29px;
+    bottom: 10px;
+    color: white;
+    width: 100px;
+}
+.MPH{
+    position: relative;
+    left: 14px;
+    font-size: 12.5px;
+    top: -3px;
+    color: white;
+    width: 100px;
+}
+.Mi353{
+    position: absolute;
+    top: 835px;
+    left: 820.25px;
+    color: white;
+    font-size: 29px;
+}
+.Mi353 p{
+    position: relative;
+    left: -10px;
+    top: 6px;
+    font-size: 12.5px;
+}
+.AWD{
+    position: absolute;
+    top: 835px;
+    left: 982.25px;
+    color: white;
+    font-size: 29px;
+}
+.AWD p{
+    position: relative;
+    left: 2.25px;
+    top: 6px;
+    font-size: 12.5px;
+}
+#Page_1 .Order{
+    position: absolute;
+    top: 851.25px;
+    left: 1100.25px;
+    color: white;
+    font-size: 12.75px;
+}
+#Page_1 .Order a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 35px;
+    border: white 3px solid;
+    border-radius: 120px;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+#Page_1  .Order a:hover{
+    background-color: white;
+    color: black;
+}
+/* Side Menu */
+.Page_1_Side{
+
+    position:sticky;
+    top: 37vh;
+    left: 15px; 
+    display: inline-block;
+    list-style: none;
+}
+.Page_1_Side li{
+    border-left: 0.5px rgba(245, 245, 245, 0.35) solid;
+    height: 23px;
+    margin: 6px -2px;
+    
+    padding: 0px 5px;
+}
+.Page_1_Side a{
+    color: transparent  ;
+    font-size: 10.5px;
+}
+.Page_1_Side .Selected{
+    border-left: 3px rgb(245, 245, 245) solid;
+    display: block;
+}
+.Page_1_Side a:hover{
+    color: white;
+}
+/* Message Icon */
+#Message{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+    padding: 10px 5px;
+    border: 1px white solid;
+    top: 86.5vh;
+    right: 2vw;
+    z-index: 1;
+}
+#Icon{
+    position: relative;
+    left: 5px;
+    top: 2px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+/* Page 2 Styling */
+#Page_2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ba4f4fe9-5c46-48c2-ad03-a5c7bf68f30c/bvlatuR/std/2880x1800/model_3_safety_hero);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 78% 95%; 
+    background-position: 220px 65px;
+}
+/* Page 2 Text Description */
+.description{ 
+    position: relative;
+    float: left;
+    display: inline;
+    border: 10px white solid;
+    padding-right: 10px;
+    background-color: white;
+    height: 900px;
+    width: 360px;
+    line-height: 1.5em;
+    top: 20px;
+    left: 40px;
+}
+.description p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.description h1{
+    font-size: 28px;
+}
+#Rating{
+    
+    display: inline;
+    color: black;
+    border: 1px #E2E4E4 solid;
+    background-color: #E2E4E4;
+    width: 310px;
+    height: 291px;
+    position: absolute;
+    margin-left: -5px;
+    top: 270px;
+    border-radius: 20px;
+}
+#Stars{
+    display: inline;
+    text-align: right;
+    position: relative;
+    font-size: 17px;
+    float: right;
+    right: 20px;
+    line-height: 2.25em;
+    top: -20px;
+}
+#Rating h3{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font: 19px;
+}
+#R_Types{
+    float: left;
+    position: relative;
+    text-align: left;
+    left: 20px;
+    top: 10px;
+    line-height: 2.75em;
+}
+#Fronside{
+    position: relative;
+    text-align: left;
+    font-size: 8px;
+    float: left;
+    top: 0px;
+    left: -53px;
+    line-height: 4.756em;
+}
+/* Side Menu */
+.Page_2_Side{
+
+    position:sticky;
+    top: 37vh;
+    left: 15px; 
+    display: inline-block;
+    list-style: none;
+}
+.Page_2_Side li{
+    border-left: 0.5px rgba(0, 0, 0, 0.35) solid;
+    height: 23px;
+    margin: 6px -40px;
+    
+    padding: 0px 5px;
+}
+.Page_2_Side a{
+    color: transparent  ;
+    font-size: 10.5px;
+}
+.Page_2_Side .Selected{
+    border-left: 3px #181B21 solid;
+    display: block;
+}
+.Page_2_Side a:hover{
+    color: #181B21;
+}
+/* Page 2 Pointers To Car Model */
+.Circle{
+    
+    height: 9.5px;
+    width: 9px;
+    background-color: #fff;
+    border: solid black 2px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.Pointer1,.Pointer2,.Pointer3{
+    display:inline-block;
+    font-size: 14px;
+}
+.Pointer1{
+    position: absolute;
+    top: calc(100vh + 200px);
+    left: 785px;
+    border-left: 3px black solid;
+    padding-left: 10px;
+    padding-bottom: 270px;
+    
+}
+.Pointer1 .Circle{
+    position: relative;
+    top: 280px;
+    right: 16px;
+}
+.Pointer2{
+    position: absolute;
+    top: calc(100vh + 110px);
+    left: 1095px;
+    border-left: 3px black solid;
+    padding-left: 10px;
+    padding-bottom: 135px;
+    
+}
+.Pointer2 .Circle{
+    position: relative;
+    top: 145px;
+    right: 16px;
+}
+.Pointer3{
+    position: absolute;
+    top: calc(100vh + 585px);
+    left: 1145px;
+    border-left: 3px black solid;
+    padding-left: 10px;
+    padding-top: 145px;
+    
+}
+.Pointer3 .Circle{
+    position: relative;
+    bottom: 175px;
+    right: 16px;
+}
+.Pointer1 p{
+    position: relative;
+    top: -10px;
+}
+.Pointer2 p{
+    position: relative;
+    top: -10px;
+}
+.Pointer3 p{
+    position: relative;
+    bottom: -20px;
+}
+/* Page 2 Buttons */
+#Page_2 .Order{
+    position: absolute;
+    top: calc(100vh + 895px) ;
+    left: 195px;
+    color: rgb(0, 0, 0);
+    font-size: 12.75px;
+}
+#Page_2 .Order a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 23px;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 120px;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+#Page_2 .Order a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#Page_2 .Learn{
+    position: absolute;
+    top: calc(100vh + 895px) ;
+    left: 90px;
+    color: rgb(0, 0, 0);
+    font-size: 12.75px;
+}
+#Page_2 .Learn a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.plus {
+    display:inline-block;
+    width:40px;
+    height:40px;
+    border: 3px black solid;
+    background:
+      linear-gradient(#000,#000),
+      linear-gradient(#000,#000),
+      rgb(255, 255, 255);
+        background-position:center;
+    background-size: 40% 2px,2px 40%; /*thickness = 2px, length = 50% (25px)*/
+    background-repeat:no-repeat;
+    transition: background-color 0.25s ease-in-out;
+    position: absolute;
+    left: -45px;
+    border-radius: 50%;
+    top: -13px;
+}
+.plus:hover{
+    background:
+    linear-gradient(#fff,#fff),
+    linear-gradient(#fff,#fff),
+    #000;
+  background-position:center;
+  background-size: 40% 2px,2px 40%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat:no-repeat;
+}
+/* Page 3 Styling */
+#Page_3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 0px -169px;
+}
+#Page_3 footer{
+    position: absolute;
+    bottom: -200vh;
+    background-color: white;
+    width: 100vw;
+    height: 25.75vh;
+}
+#Page_3 .Speed_Inner1{
+    z-index: 1;
+    position: relative;
+    top: 582px;
+    left: 555px;
+}
+#Page_3 .Speed_Range1{
+    z-index: 1;
+    position: relative;
+    top: 543.5px;
+    left: 549px;
+    
+}
+#Page_3 .needle{
+    z-index: 1;
+    position: relative;
+    top: 567px;
+    left: 567px;
+    
+}
+#Page_3 .MPH{
+    text-align: center;
+    position: relative;
+    left: -100px;
+    font-size: 12.5px;
+    top: -3px;
+    color: white;
+    width: 290px;
+}
+#Page_3 .Mi353{
+    position: relative;
+    top: 518px;
+    left: 870px;
+    color: white;
+    font-size: 29px;
+}
+#Page_3 .Mi353 p{
+    text-align: center;
+    position: relative;
+    left: -85px;
+    top: 8px;
+    font-size: 12.5px;
+    width: 300px;
+}
+#Page_3 .AWD{
+    position: relative;
+    top: 453px;
+    left: 1227px;
+    color: white;
+    font-size: 29px;
+}
+#Page_3 .AWD  p{
+    text-align: center;
+    position: relative;
+    left: -100px;
+    top: 6px;
+    font-size: 12.5px;
+    width: 300px;
+}
+/* Page 3 Side Menu */
+.Page_3_Side{
+
+    position:sticky;
+    top: 37vh;
+    left: 15px; 
+    display: inline-block;
+    list-style: none;
+}
+.Page_3_Side li{
+    border-left: 0.5px rgba(245, 245, 245, 0.35) solid;
+    height: 23px;
+    margin: 6px -2px;
+    
+    padding: 0px 5px;
+}
+.Page_3_Side a{
+    color: transparent  ;
+    font-size: 10.5px;
+}
+.Page_3_Side .Selected{
+    border-left: 3px rgb(245, 245, 245) solid;
+    display: block;
+}
+.Page_3_Side a:hover{
+    color: white;
+}
+/* Page 3 Buttons */
+#Page_3 .Order{
+    position: absolute;
+    top: 120px;
+    left: 600px;
+    color: rgb(0, 0, 0);
+    font-size: 12.75px;
+}
+#Page_3 .Order a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 23px;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 120px;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+#Page_3 .Order a:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#Page_3 .Learn{
+    position: absolute;
+    top: 120px ;
+    left: 500px;
+    color: rgb(0, 0, 0);
+    font-size: 12.75px;
+}
+#Page_3 .Learn a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* Page 3 Text Content */
+#Page_3 .Title{ 
+    position: absolute;
+    float: left;
+    display: inline;
+    padding-right: 10px;
+    line-height: 1.75em;
+    top: 42px;
+    left: 452px;
+    font-size: 14px;
+}
+#Page_3 .Page_3_description{
+    font-size: 15px;
+    position: absolute;
+    width: 640px;
+    left: 800px;
+    top: 42px;
+    line-height: 21px;
+}
